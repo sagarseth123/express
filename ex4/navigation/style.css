@@ -1,0 +1,33 @@
+body{
+    /* padding: 0px; */
+    margin:0px;
+}
+nav{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    margin:0px;
+}
+
+#title{
+    width: 60%;
+    color: whitesmoke;
+}
+
+#ele{
+    width: 40%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 5px;
+    color: brown;
+}
+/* #ele div{
+    margin: 5px;
+} */
+#ele div{
+   padding-top: 8px;
+}
+#ele div a{
+    color: whitesmoke;
+}

@@ -1,0 +1,30 @@
+
+h3{
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+    margin: 20px;
+    color: #0384fc;
+    font-style: italic;
+}
+
+.main{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+img{
+    margin: 110px;
+    margin-bottom: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    width: 400px;
+    height: 220px;
+    border-style: groove;
+}
+
+p{
+    text-decoration: double;
+    font-size: larger;
+    font-family: monospace;
+}

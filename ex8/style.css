@@ -1,0 +1,34 @@
+.text{
+    /* text-align: center; */
+    margin: 120px;
+}
+
+.text button{
+    width: 1130px;
+}
+body{
+    padding:30px;
+}
+.files{
+    margin: 20px;
+    padding: 10px;
+    font-size: 24px;
+    background-color: #0373fc;
+    color: aliceblue;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+.file span{
+    cursor: grabbing;
+}
+
+.files:hover{
+    color: #0373fc;
+    background-color: aliceblue;
+}
+
+.files span{
+    margin-left: 40px;
+    margin-right: 40px;
+}

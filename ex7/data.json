@@ -1,0 +1,17 @@
+[
+    {
+        "id": "1",
+        "path":"videos/vid1.mp4",
+        "name":"instincts"
+    },
+    {
+        "id": "2",
+        "path":"videos/vid1.mp4",
+        "name":"instincts 2"
+    },
+    {
+        "id": "2",
+        "path":"videos/vid1.mp4",
+        "name":"instincts 2"
+    }
+]

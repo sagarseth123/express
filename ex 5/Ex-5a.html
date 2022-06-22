@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body ng-app="">
+
+    My favorite topic is:
+    <select ng-model="myVar">
+  <option value="Science">Science
+  <option value="Social">Social
+  <option value="Maths">Maths
+</select>
+
+    <hr>
+    <div ng-switch="myVar">
+        <div ng-switch-when="Science">
+            <h1>Science</h1>
+            <p>science, any system of knowledge that is concerned with the physical world and its phenomena and that entails unbiased observations and systematic experimentation. In general, a science involves a pursuit of knowledge covering general truths
+                or the operations of fundamental laws.</p>
+        </div>
+        <div ng-switch-when="Social">
+            <h1>Social</h1>
+            <p>
+                1 : enjoying other people : sociable a social person.<br> 2 : relating to interaction with other people especially for pleasure a busy social life.<br> 3 : of or relating to human beings as a group Marriage and family are social institutions.<br>                4 : living naturally in groups or communities Bees are social insects.</p>
+        </div>
+        <div ng-switch-when="Maths">
+            <h1>Maths</h1>
+            <p>Mathematics (from Ancient Greek μάθημα; máthēma: 'knowledge, study, learning') is an area of knowledge that includes such topics as numbers (arithmetic and number theory), formulas and related structures (algebra), shapes and the spaces in
+                which they are contained (geometry), and quantities and their changes </p>
+        </div>
+        <div ng-switch-default>
+            <h1>Switch</h1>
+            <p>Select topic from the dropdown, to switch the content of this DIV.</p>
+        </div>
+    </div>
+    <hr>
+
+    <p>The ng-switch directive hides and shows HTML sections depending on a certain value.</p>
+
+</body>
+
+</html>

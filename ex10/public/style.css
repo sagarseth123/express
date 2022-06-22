@@ -1,0 +1,57 @@
+body{
+    /* padding: 0px; */
+    margin:0px;
+}
+nav{
+    display: flex;
+    width: 100%;
+    background-color: gray;
+    margin:0px;
+}
+
+#title{
+    width: 60%;
+    color: whitesmoke;
+}
+
+#ele{
+    width: 40%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 5px;
+    color: brown;
+}
+/* #ele div{
+    margin: 5px;
+} */
+#ele div{
+   padding-top: 8px;
+}
+#ele div a{
+    color: whitesmoke;
+}
+
+
+.page{
+   width: 70%;
+   margin: 15%;
+   padding: 50px;
+   text-align: center;
+   background-color: gray;
+   color: aliceblue;
+   border-radius: 20px;
+}
+
+
+
+/* angular animaton */
+
+main.ng-enter{
+    transition: 0.5s linear all;
+    opacity: 0;
+}
+
+main.ng-enter.ng-enter-active{
+    opacity: 1;
+}

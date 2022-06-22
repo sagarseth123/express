@@ -1,0 +1,10 @@
+[
+    {
+        "filename":"first",
+        "content":"this is my first text file on this web application"
+    },
+    {
+        "filename":"second",
+        "content":"this is my second text file on this web application"
+    }
+]

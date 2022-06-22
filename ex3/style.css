@@ -1,0 +1,26 @@
+
+
+.calc{
+    border-style: groove;
+    margin: 7% 32%;
+    display: inline-block;
+}
+.no{
+    display: inline-block;
+}
+
+.no div{
+    display: flex;
+}
+
+.no div div{
+    border-style: groove;
+    padding: 20px;
+    width: 120px;
+    text-align: center;
+}
+
+.no div div:hover{
+    background-color: grey;
+}
+

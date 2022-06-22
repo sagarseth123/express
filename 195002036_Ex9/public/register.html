@@ -1,0 +1,56 @@
+<head>
+
+    <title>Register</title>
+    <style>
+        body {
+            color: #000;
+            font-size: 20 px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .register_btn {
+            font-size: 20px;
+            color: black;
+            margin-top: 5px;
+        }
+
+        .login_link {
+            font-size: 1 em;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+
+<div class="register_div">
+    <h1 class="brand">Register Here</h1>
+    <form name="register_form" ng-controller="userRegisterCtrl" ng-submit="submitData()" ng-init="populate()">
+        <label for="">First Name: </label>
+        <input type="text" name="f_name" id="f_name" class="f_name" ng-required="true">
+        <div ng-show="register_form.f_name.$touched && register_form.f_name.$invalid">
+            <small style="color: red;">enter valid first name</small>
+        </div>
+        <br><br>
+        <label for="">Last Name: </label>
+        <input type="text" name="l_name" id="l_name" class="l_name" ng-required="true">
+        <div ng-show="register_form.l_name.$touched && register_form.l_name.$invalid">
+            <small style="color: red;">enter valid last name</small>
+        </div>
+        <br><br>
+        <labelfor="">Email: </label>
+            <input type="email" name="email" id="email" class="email" ng-required="true">
+            <div ng-show="register_form.email.$touched && register_form.email.$invalid">
+                <small style="color: red;">enter valid email-id</small>
+            </div>
+            <br><br>
+            <label for="">Password: </label>
+            <input type="password" name="pwd" id="pwd" class="pwd" ng-required="true">
+            <div ng-show="register_form.pwd.$touched && register_form.pwd.$invalid">
+                <small style="color: red;">enter valid password</small>
+            </div><br><br>
+            <input class="register_btn" type="submit" value="Register" ng-disabled="register_form.$invalid">
+            <a class="login_link" href="#!/users">
+                <p>View Existing Users</p>
+            </a>
+    </form>
+</div>

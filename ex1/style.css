@@ -1,0 +1,40 @@
+body{
+    display: flex;
+}
+.title{
+    text-align: center;
+    font-size: 54px;
+    font-weight: 800;
+    color: #EBF00A;
+    padding: 10px;
+    margin: 10px;
+}
+
+.my_img{
+    width: 50%;
+    height: 10%;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+th{
+    font-size: 20px;
+    padding: 45px;
+    margin: 45px;
+}
+
+input{
+   margin-top: 10px;
+}
+
+.frm{
+    width: 900px;
+    height: 600px;
+}
+
+.audio{
+    position: sticky;
+    bottom: 10px;
+    float: right;
+    display: inline-block;
+}

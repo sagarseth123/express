@@ -1,0 +1,35 @@
+body{
+    /* display: flex; */
+    text-align: center;
+}
+
+div{
+    border: 2px;
+    margin: 15%;
+    padding: 30px;
+    display: flex;
+    display: inline-block;
+    text-align: justify;
+    border-style: groove;
+    border-radius: 10px;
+}
+form{
+    display: inline-block;
+}
+
+label{
+    padding: 5px;
+    margin: 5px;
+}
+
+input{
+    float: right;
+    padding: 5px;
+    margin: 3px;
+    background-color: ghostwhite;
+}
+
+button{
+    float: right;
+    margin-top: 10px;
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" ng-app="MyApp">
+  <head>
+    <title>Text Editor</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body ng-controller="AppController">
+
+    <div class="text">
+        <form ng-submit="save()">
+        <label for="Filename">File Name</label><br>
+        <input ng-model="filename" type="text" required><br>
+        <label for="Text">Text</label><br>
+        <textarea ng-model="text" name="text" id="text" cols="150" rows="10" ></textarea><br>
+        <button type="submit" class="btn btn-large btn-primary">Save</button>
+        </form>
+    </div>
+
+    <div >
+        <div class="files"  ng-repeat="file in files" >
+            <span ng-click="show($event)" >{{file.filename}}</span>
+            <span style="float: right;"><i ng-click="delete(file)" class="fa-solid fa-trash-can"></i></span>
+        </div>
+    </div>
+      
+    </body>
+</html>
